@@ -3,5 +3,5 @@ Furry Discord Bot - [Click Here to Invite](https://discordapp.com/api/oauth2/aut
 
 If you found this page trying to google for the bot's commands, use `f.help` in discord.
 
-#### Original Bot (GraveBot):
+#### Original Bot :
 
