@@ -10,7 +10,6 @@ function shoot(client, evt) {
   let authorName = cleanName(evt.message.member.name);
 
   let receiverArray = [];
-  let receivers = '';
 
   if (evt.message.mentions.length !== 0) {
     evt.message.mentions.map(user => {
@@ -19,14 +18,7 @@ function shoot(client, evt) {
     });
 
     if (receiverArray.length !== 0) {
-
-      if (receiverArray.length <= 2) {
-        receivers = receiverArray.join(' and ');
-      }
-
-      if (receiverArray.length >= 3) {
-        receivers = receiverArray.slice(0, -1).join(', ') + ' and ' + receiverArray[receiverArray.length-1];
-      }
+      let receivers = receiverArray.join(' and ');
 
       const shoots = [
         `grabs their pistol and empties the chambers at ${receivers}, sayonara! :scream:<:shoot:457179730525945856>`,
