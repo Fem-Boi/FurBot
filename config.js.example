@@ -30,7 +30,7 @@ module.exports = {
 
   // Youtube API key, used for searching videos with `!youtube`.
   // Learn more here. https://developers.google.com/youtube/v3/getting-started
-  YOUTUBE_KEY: '',
+  YOUTUBE_KEY: '!youtube`',
 
   // Imgflip username and password, used for creating memes with `!meme`.
   // Create an account here. https://imgflip.com
@@ -64,7 +64,7 @@ module.exports = {
 
   // Random.org API key, used for getting random numbers and strings with `!random`.
   // Get a key here. https://api.random.org/api-keys
-  RANDOM_KEY: '',
+  RANDOM_KEY: '!random',
 
   // Cleverbot API key, used for talking with `!chat`.
   // Get a key here. https://www.cleverbot.com/api
@@ -76,7 +76,7 @@ module.exports = {
   DBOTS_KEY: '',
 
   // DerpiBooru API Key, used for derpibooru image searching.
-  DERPIBOORU_KEY: '',
+  DERPIBOORU_KEY: '!derpibooru',
 
   // DarkSky API key, used for weather reports.
   DARKSKY_KEY: '',
