@@ -19,7 +19,7 @@ function cmd(cmd, evt, suffix) {
   if (production) return logger.info({cmd, evt, suffix}, 'cmd');
   let guildid;
   if (evt.message.channel.isPrivate) { guildid = 'Direct Message'; } else { guildid = evt.message.guild.id; }
-  console.log(chalk.magenta.bold(`[FurBot]`), chalk.blue(`[${moment().format('DD-MM-YYYY HH:mm:ss')}]`), chalk.bold.green(`[${guildid}]`), chalk.bold.green(`[${evt.message.author.username}]`), chalk.green(`${nconf.get('PREFIX')}${cmd}`), suffix);
+  console.log(chalk.magenta.bold(`[Furry]`), chalk.blue(`[${moment().format('DD-MM-YYYY HH:mm:ss')}]`), chalk.bold.green(`[${guildid}]`), chalk.bold.green(`[${evt.message.author.username}]`), chalk.green(`${nconf.get('PREFIX')}${cmd}`), suffix);
 }
 
 function info(msg) {
@@ -34,17 +34,17 @@ function blank(msg) {
 
 function success(msg) {
   if (production) return _submitToLogger('success', msg);
-  console.log(chalk.magenta.bold(`[FurBot]`), chalk.blue(`[${moment().format('DD-MM-YYYY HH:mm:ss')}]`), chalk.green(`${msg}`));
+  console.log(chalk.magenta.bold(`[Furry]`), chalk.blue(`[${moment().format('DD-MM-YYYY HH:mm:ss')}]`), chalk.green(`${msg}`));
 }
 
 function warn(msg) {
   if (production) return _submitToLogger('warn', msg);
-  console.log(chalk.magenta.bold(`[FurBot]`), chalk.blue(`[${moment().format('DD-MM-YYYY HH:mm:ss')}]`), chalk.yellow(`[WARN] ${msg}`));
+  console.log(chalk.magenta.bold(`[Furry]`), chalk.blue(`[${moment().format('DD-MM-YYYY HH:mm:ss')}]`), chalk.yellow(`[WARN] ${msg}`));
 }
 
 function error(msg) {
   if (production) return _submitToLogger('error', msg);
-  console.log(chalk.magenta.bold(`[FurBot]`), chalk.blue(`[${moment().format('DD-MM-YYYY HH:mm:ss')}]`), chalk.red(`[ERROR] ${msg} ++`));
+  console.log(chalk.magenta.bold(`[Furry]`), chalk.blue(`[${moment().format('DD-MM-YYYY HH:mm:ss')}]`), chalk.red(`[ERROR] ${msg} ++`));
 }
 
 
