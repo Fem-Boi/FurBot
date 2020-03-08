@@ -28,10 +28,10 @@ let client;
 let initialized = false;
 let argv = require('minimist')(process.argv.slice(2));
 
-const bot_prefix = nconf.get('PREFIX');
+const bot_prefix = nconf.get('!');
 
-function callCmd(cmd, name, client, evt, suffix) {
-  logger.cmd(name, evt, suffix);
+function callCmd ('help') {
+  logger.cmd('help');
   datadog(`cmd.${name}`, 1);
 
   function processEntry(entry) {
@@ -175,12 +175,12 @@ function onGuild(evt) {
 }
 
 function connect() {
-  if (!nconf.get('TOKEN') || !nconf.get('CLIENT_ID')) {
-    logger.error('Please setup TOKEN and CLIENT_ID in config.js to use FurBot');
+  if (!nconf.get('NjU0MTQ3NzY1ODE0OTUxOTc4.XmU7ZA.gcxw-GBhe0HAP-g4IrbfgFOCGVM') || !nconf.get('654147765814951978')) {
+    logger.error('Please setup TOKEN and CLIENT_ID in config.js to use ('Furry');
     process.exit(1);
   }
 
-  client.connect({token: nconf.get('TOKEN')});
+  client.connect({token: nconf.get('NjU0MTQ3NzY1ODE0OTUxOTc4.XmU7ZA.gcxw-GBhe0HAP-g4IrbfgFOCGVM')});
 }
 
 function forceSetGame() {
